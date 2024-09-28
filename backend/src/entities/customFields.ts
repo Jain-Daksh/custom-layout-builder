@@ -5,14 +5,14 @@ import { Customer } from './customer';
 @Entity()
 export class CustomField {
   @PrimaryGeneratedColumn()
-  id: number;
+  id!: number;
 
   @ManyToOne(() => Customer)
-  customer: Customer;
+  customer!: Customer;
 
   @Column()
-  field_name: string;
+  field_name!: string;
 
   @Column()
-  field_value: string;
+  field_value!: string;
 }

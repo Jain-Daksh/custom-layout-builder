@@ -5,17 +5,17 @@ import { Customer } from './customer';
 @Entity()
 export class Address {
   @PrimaryGeneratedColumn()
-  id: number;
+  id!: number;
 
   @ManyToOne(() => Customer, customer => customer.addresses)
-  customer: Customer;
+  customer!: Customer;
 
   @Column()
-  address_1: string;
+  address_1!: string;
 
   @Column()
-  city: string;
+  city!: string;
 
   @Column()
-  state: string;
+  state!: string;
 }

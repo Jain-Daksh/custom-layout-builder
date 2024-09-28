@@ -1,6 +1,6 @@
 // src/resolvers/customerResolver.ts
 import { Resolver, Query, Mutation, Arg } from 'type-graphql';
-import { Customer } from '../entities/Customer';
+import { Customer } from '../entities/customer';
 import { getRepository } from 'typeorm';
 
 @Resolver()

@@ -5,11 +5,11 @@ import { Customer } from './customer';
 @Entity()
 export class CustomLayout {
   @PrimaryGeneratedColumn()
-  id: number;
+  id!: number;
 
   @ManyToOne(() => Customer)
-  customer: Customer;
+  customer!: Customer;
 
   @Column('json')
-  layout: object; // e.g., { "alt_phone": "string", "alt_email": "string", "last_name": "string" }
+  layout!: object; // e.g., { "alt_phone": "string", "alt_email": "string", "last_name": "string" }
 }

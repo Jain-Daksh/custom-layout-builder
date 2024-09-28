@@ -1,7 +1,7 @@
 // src/resolvers/addressResolver.ts
 import { Resolver, Query, Mutation, Arg } from 'type-graphql';
 import { Address } from '../entities/address';
-import { Customer } from '../entities/Customer';
+import { Customer } from '../entities/customer';
 import { getRepository } from 'typeorm';
 
 @Resolver()
